@@ -1,0 +1,24 @@
+/* Minimal functional styling — cosmetics pass comes later. */
+body { font-family: system-ui, Arial, sans-serif; margin: 1rem; color: #222; }
+h1 { font-size: 1.3rem; margin: 0 0 .5rem; }
+h2 { font-size: 1rem; margin: .3rem 0; }
+
+.tabs { display: flex; gap: .3rem; flex-wrap: wrap; margin: .5rem 0; }
+.tabs button { padding: .4rem .7rem; border: 1px solid #ccc; background: #f4f4f4;
+  cursor: pointer; border-radius: 4px; font-size: .9rem; }
+.tabs button.active { background: #1769aa; color: #fff; border-color: #1769aa; }
+
+.controls { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: .5rem 0; }
+.note { color: #888; font-size: .8rem; }
+
+.grid { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
+.panel { flex: 1; min-width: 340px; }
+
+#tableWrap { max-height: 72vh; overflow: auto; border: 1px solid #eee; }
+table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+th, td { padding: .25rem .5rem; text-align: left; border-bottom: 1px solid #eee; }
+th { position: sticky; top: 0; background: #fafafa; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.wc { background: #eef6ff; }
+
+#chartWrap { height: 72vh; border: 1px solid #eee; padding: .3rem; }
