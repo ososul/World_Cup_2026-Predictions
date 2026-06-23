@@ -3,13 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>World Cup 2026 — Ratings</title>
+  <title>World Cup 2026 — Ratings &amp; Odds</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>World Cup 2026 — Ratings</h1>
+  <h1>World Cup 2026 — Ratings &amp; Odds</h1>
 
+  <div class="panel oddspanel">
+    <h2>Match odds</h2>
+    <div class="oddsform">
+      <label>Model <select id="modelSel"></select></label>
+      <label>Team A <select id="teamA"></select></label>
+      <label>Team B <select id="teamB"></select></label>
+      <label>Venue
+        <select id="venue">
+          <option value="N">Neutral</option>
+          <option value="A">Team A home (+100)</option>
+          <option value="B">Team B home (+100)</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="wcOnly"> WC 2026 teams only</label>
+      <button id="swapBtn" type="button">Swap A/B</button>
+    </div>
+    <div id="oddsOut"></div>
+  </div>
+
+  <h2 class="section">Ratings</h2>
   <div id="tabs" class="tabs"></div>
 
   <div class="controls">
@@ -32,5 +52,6 @@
   </div>
 
   <script src="app.js"></script>
+  <script src="predict.js"></script>
 </body>
 </html>

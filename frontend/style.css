@@ -22,3 +22,18 @@ td.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr.wc { background: #eef6ff; }
 
 #chartWrap { height: 72vh; border: 1px solid #eee; padding: .3rem; }
+
+/* match-odds panel */
+h2.section { margin-top: 1rem; }
+.oddspanel { border: 1px solid #ddd; border-radius: 6px; padding: .6rem .8rem;
+  margin: .5rem 0 1rem; background: #fbfcfe; }
+.oddsform { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: .6rem; }
+.oddsform label { display: flex; gap: .35rem; align-items: center; font-size: .9rem; }
+.oddsform select { font-size: .9rem; padding: .2rem; }
+.oddsform button { padding: .3rem .6rem; border: 1px solid #ccc; background: #f4f4f4;
+  cursor: pointer; border-radius: 4px; font-size: .85rem; }
+.oddstable { border-collapse: collapse; font-size: .95rem; width: auto; }
+.oddstable th { position: static; background: none; } /* undo the generic sticky table header */
+.oddstable th, .oddstable td { padding: .3rem .9rem; border-bottom: 1px solid #eee; }
+.oddstable th, .oddstable td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.oddstable th:first-child, .oddstable td:first-child { text-align: left; color: #666; }

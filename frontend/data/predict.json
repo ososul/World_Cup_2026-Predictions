@@ -1,0 +1,14 @@
+{
+  "eloScale": 400,
+  "homeAdvantage": 100,
+  "ratingSystem": "prelim_elo",
+  "models": [
+    {
+      "id": "davidson",
+      "label": "Davidson (Preliminary Elo)",
+      "params": {
+        "nu": 0.70653
+      }
+    }
+  ]
+}

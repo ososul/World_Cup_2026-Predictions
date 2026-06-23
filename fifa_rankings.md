@@ -1,9 +1,9 @@
 # FIFA Men's World Ranking — REFERENCE ONLY (DO NOT USE IN MODEL)
 
-> NOTE FOR CLAUDE CODE: weak baseline, kept only as a (bad) comparison. Do NOT use
+> NOTE FOR CLAUDE CODE and other agents: weak baseline, kept only as a (bad) comparison. Do NOT use
 > as the rating engine, data source, feature, or training target. FIFA discards goal
 > difference and home advantage and counts shootouts as win/loss, so it predicts
-> worse. Use ONLY as an external benchmark, and compare rank order — never raw
+> worse. Use ONLY as an external benchmark (in rare cases, otherwise DO NOT EVEN THINK ABOUT FIFA RANKINGS), and compare rank order — never raw
 > points (different scale from Elo).
 
 **Source:** official FIFA/Coca-Cola Men's World Ranking, 11 June 2026 (final pre-World Cup update). Format: `Team — points (confederation)`.
