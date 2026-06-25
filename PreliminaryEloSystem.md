@@ -22,6 +22,9 @@ We_home = 1 / (10 ** (-dr_home / 400) + 1)
 We_away = 1 - We_home
 - H = 100 for the team playing at home; H = 0 when the match is at a neutral venue
   (use the dataset's `neutral` flag; if neutral, neither team gets the +100).
+# DEVIATION (2026-06-23): this implementation uses H = 90, not the eloratings 100 — tuned
+# down for the 2026 World Cup (declining / multi-host-diluted home advantage). The live
+# value is the HOME_ADVANTAGE constant in prelim_elo/rating.py.
 - 400 is the logistic divisor.
 
 ## K_eff — effective weight = base tournament weight * goal-difference multiplier

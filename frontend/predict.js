@@ -12,6 +12,31 @@ const MODELS = {
     const den = g + 1 + p.nu * sg;
     return [g / den, (p.nu * sg) / den, 1 / den];
   },
+  // Ordered logistic: latent gap m = b*dr, symmetric draw band +/- theta.
+  ordlogit(dr, p) {
+    const s = (z) => 1 / (1 + Math.exp(-z));
+    const m = p.b * dr;
+    const pH = s(m - p.theta), pA = s(-m - p.theta);
+    return [pH, 1 - pH - pA, pA];
+  },
+  // Independent Poisson goals; 1X2 from the renormalised score grid (mirrors models.poisson_probs).
+  poisson(dr, p) {
+    const MAX = 15, x = dr / 400;
+    const lamH = Math.exp(p.mu + p.beta * x), lamA = Math.exp(p.mu - p.beta * x);
+    const pmf = (lam) => {
+      const out = [Math.exp(-lam)];
+      for (let k = 1; k <= MAX; k++) out.push(out[k - 1] * lam / k);
+      return out;
+    };
+    const ph = pmf(lamH), pa = pmf(lamA);
+    let H = 0, D = 0, A = 0;
+    for (let i = 0; i <= MAX; i++) for (let j = 0; j <= MAX; j++) {
+      const pij = ph[i] * pa[j];
+      if (i > j) H += pij; else if (i === j) D += pij; else A += pij;
+    }
+    const t = H + D + A;
+    return [H / t, D / t, A / t];
+  },
 };
 
 async function pget(path) {

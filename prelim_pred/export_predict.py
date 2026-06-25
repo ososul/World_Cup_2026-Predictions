@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "prelim_pred"))
 
 from rating import HOME_ADVANTAGE       # noqa: E402
 from dataset import build_samples        # noqa: E402
-from models import fit_davidson          # noqa: E402
+from models import fit_davidson, fit_ordlogit, fit_poisson   # noqa: E402
 
 DATA = ROOT / "frontend" / "data"
 
@@ -27,6 +27,8 @@ DATA = ROOT / "frontend" / "data"
 def main() -> None:
     samples = build_samples()
     nu = fit_davidson(samples)
+    b, theta = fit_ordlogit(samples)
+    mu, beta = fit_poisson(samples)
     registry = {
         "eloScale": 400,
         "homeAdvantage": HOME_ADVANTAGE,
@@ -34,11 +36,17 @@ def main() -> None:
         "models": [
             {"id": "davidson", "label": "Davidson (Preliminary Elo)",
              "params": {"nu": round(nu, 5)}},
+            {"id": "ordlogit", "label": "Ordered logistic (Preliminary Elo)",
+             "params": {"b": round(b, 6), "theta": round(theta, 5)}},
+            {"id": "poisson", "label": "Poisson (Preliminary Elo)",
+             "params": {"mu": round(mu, 5), "beta": round(beta, 5)}},
         ],
     }
     DATA.mkdir(parents=True, exist_ok=True)
     (DATA / "predict.json").write_text(json.dumps(registry, indent=2), encoding="utf-8")
-    print(f"Wrote {DATA / 'predict.json'}  ({len(samples):,} matches; davidson nu={nu:.5f})")
+    print(f"Wrote {DATA / 'predict.json'}  ({len(samples):,} matches; "
+          f"davidson nu={nu:.5f}; ordlogit b={b:.6f} theta={theta:.5f}; "
+          f"poisson mu={mu:.5f} beta={beta:.5f})")
 
 
 if __name__ == "__main__":

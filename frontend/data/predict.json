@@ -1,13 +1,29 @@
 {
   "eloScale": 400,
-  "homeAdvantage": 100,
+  "homeAdvantage": 90,
   "ratingSystem": "prelim_elo",
   "models": [
     {
       "id": "davidson",
       "label": "Davidson (Preliminary Elo)",
       "params": {
-        "nu": 0.70653
+        "nu": 0.70311
+      }
+    },
+    {
+      "id": "ordlogit",
+      "label": "Ordered logistic (Preliminary Elo)",
+      "params": {
+        "b": 0.00529,
+        "theta": 0.60036
+      }
+    },
+    {
+      "id": "poisson",
+      "label": "Poisson (Preliminary Elo)",
+      "params": {
+        "mu": 0.28042,
+        "beta": 0.755
       }
     }
   ]

@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import math
 
-HOME_ADVANTAGE = 100  # added to the home side's rating difference at a non-neutral venue
+HOME_ADVANTAGE = 90  # home-side bump at a non-neutral venue (tuned down from eloratings' 100)
 
 
 def win_expectancy(dr: float) -> float:
