@@ -28,16 +28,16 @@ simulation (advance / win probabilities). FIFA's own ranking is a **benchmark on
 - **`engine.py`** — `run(record_history=False) -> (ratings, counts, last_date, n[, history])`.
   `INITIAL = 1500`, `PROVISIONAL_MATCHES = 30`. Replays all played matches in order.
 - **`output.py`** — writes `current_ratings.csv`; `wc2026_teams(played, fixtures)` → 48-team set.
-- **`export_web.py`** — writes `frontend/data/*.json`.
+- **`export_web.py`** — writes `web/public/data/*.json`.
 
-Outputs: `current_ratings.csv` (full ranked table); `frontend/` (static viewer on **8080**,
+Outputs: `current_ratings.csv` (full ranked table); `web/` (Next.js app on **3100**,
 manifest-driven). `tournament_tiers.json` = frozen tournament→K_base map.
 
 Run / refresh:
 ```
 python3 prelim_elo/output.py        # -> current_ratings.csv + prints WC-48 ranking
-python3 prelim_elo/export_web.py    # -> frontend JSON
-cd frontend && python3 -m http.server 8080
+python3 prelim_elo/export_web.py    # -> web/public/data JSON
+cd web && npm run dev               # -> http://localhost:3100
 ```
 
 ## 3. Live state (as of 2026-06-22 — changes as matches are entered)

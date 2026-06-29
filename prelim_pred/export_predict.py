@@ -5,7 +5,7 @@ fit (the temporal hold-out is only for validation, see checkin1.py) — and writ
 the small registry the frontend's match-odds panel reads. Adding a model later =
 fit it and append an entry here, plus a matching function in the frontend's MODELS.
 
-    python3 prelim_pred/export_predict.py   # -> frontend/data/predict.json
+    python3 prelim_pred/export_predict.py   # -> web/public/data/predict.json
 """
 from __future__ import annotations
 
