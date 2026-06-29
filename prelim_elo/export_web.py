@@ -18,7 +18,7 @@ from engine import run, PROVISIONAL_MATCHES
 from output import wc2026_teams
 
 BASE = Path(__file__).resolve().parent.parent
-DATA = BASE / "frontend" / "data"
+DATA = BASE / "web" / "public" / "data"
 FIFA_MD = BASE / "fifa_rankings.md"
 
 # FIFA prints some teams under different names; alias the WC-relevant ones to dataset names
