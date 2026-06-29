@@ -1,7 +1,7 @@
 // Match-odds panel: pick two teams + venue + model and compute W/D/L from the
 // Preliminary Elo ratings, entirely in the browser. The model math mirrors
-// prelim_pred/models.py exactly. Add ordered-logit / Poisson later by appending an
-// entry to data/predict.json and a matching function to MODELS, keyed by the id.
+// prelim_pred/models.py exactly. Add a model by appending an entry to data/predict.json
+// and a matching function to MODELS, keyed by the id.
 
 const PRED = { cfg: null, ratings: {} };
 
@@ -19,8 +19,9 @@ const MODELS = {
     const pH = s(m - p.theta), pA = s(-m - p.theta);
     return [pH, 1 - pH - pA, pA];
   },
-  // Independent Poisson goals; 1X2 from the renormalised score grid (mirrors models.poisson_probs).
-  poisson(dr, p) {
+  // Dixon-Coles goals: Poisson + low-score dependence on the four lowest cells
+  // (mirrors models.dixoncoles_probs; rho = 0 would reduce to plain Poisson).
+  dixoncoles(dr, p) {
     const MAX = 15, x = dr / 400;
     const lamH = Math.exp(p.mu + p.beta * x), lamA = Math.exp(p.mu - p.beta * x);
     const pmf = (lam) => {
@@ -28,10 +29,18 @@ const MODELS = {
       for (let k = 1; k <= MAX; k++) out.push(out[k - 1] * lam / k);
       return out;
     };
+    const tau = (i, j) => {
+      if (i === 0 && j === 0) return 1 - lamH * lamA * p.rho;
+      if (i === 1 && j === 0) return 1 + lamA * p.rho;
+      if (i === 0 && j === 1) return 1 + lamH * p.rho;
+      if (i === 1 && j === 1) return 1 - p.rho;
+      return 1;
+    };
     const ph = pmf(lamH), pa = pmf(lamA);
     let H = 0, D = 0, A = 0;
     for (let i = 0; i <= MAX; i++) for (let j = 0; j <= MAX; j++) {
-      const pij = ph[i] * pa[j];
+      let pij = ph[i] * pa[j];
+      if (i <= 1 && j <= 1) { pij *= tau(i, j); if (pij < 0) pij = 0; }
       if (i > j) H += pij; else if (i === j) D += pij; else A += pij;
     }
     const t = H + D + A;

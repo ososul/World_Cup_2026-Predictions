@@ -7,23 +7,24 @@
       "id": "davidson",
       "label": "Davidson (Preliminary Elo)",
       "params": {
-        "nu": 0.70311
+        "nu": 0.70315
       }
     },
     {
       "id": "ordlogit",
       "label": "Ordered logistic (Preliminary Elo)",
       "params": {
-        "b": 0.00529,
-        "theta": 0.60036
+        "b": 0.005291,
+        "theta": 0.60043
       }
     },
     {
-      "id": "poisson",
-      "label": "Poisson (Preliminary Elo)",
+      "id": "dixoncoles",
+      "label": "Dixon-Coles (Preliminary Elo)",
       "params": {
-        "mu": 0.28042,
-        "beta": 0.755
+        "mu": 0.28109,
+        "beta": 0.75488,
+        "rho": -0.05066
       }
     }
   ]

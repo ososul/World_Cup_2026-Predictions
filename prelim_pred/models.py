@@ -14,8 +14,12 @@ by maximum likelihood.
 Poisson (independent goals): log lambda_home = mu + beta*(dr/400), log lambda_away =
 mu - beta*(dr/400); each team's goals are independent Poisson and the 1X2 falls out of the
 score grid. Two free parameters (mu baseline, beta gap->goals), fit to the realised
-SCORELINES (not the 1X2) by maximum likelihood. Plain/independent for now — no Dixon-Coles
-low-score correction yet.
+SCORELINES (not the 1X2) by maximum likelihood. Kept as the validation baseline.
+
+Dixon-Coles: plain Poisson plus a one-parameter (rho) dependence factor tau on the four
+lowest score cells (0-0, 1-0, 0-1, 1-1), correcting independent Poisson's under-prediction of
+low-scoring draws. rho = 0 recovers plain Poisson exactly (nested). Three free parameters
+(mu, beta, rho), fit to the scorelines by maximum likelihood.
 
 Also exposes the win-expectancy / expected-score helpers used to report how far
 Davidson's implied expected score drifts from Elo's We (a confirmed reporting
@@ -98,6 +102,70 @@ def poisson_probs(dr: float, mu: float, beta: float, max_goals: int = 15):
     return p_home / total, p_draw / total, p_away / total
 
 
+def _dc_tau(x: int, y: int, lam_home: float, lam_away: float, rho: float) -> float:
+    """Dixon-Coles dependence factor; 1.0 outside the four lowest score cells."""
+    if x == 0 and y == 0:
+        return 1.0 - lam_home * lam_away * rho
+    if x == 1 and y == 0:
+        return 1.0 + lam_away * rho
+    if x == 0 and y == 1:
+        return 1.0 + lam_home * rho
+    if x == 1 and y == 1:
+        return 1.0 - rho
+    return 1.0
+
+
+def dixoncoles_probs(dr: float, mu: float, beta: float, rho: float, max_goals: int = 15):
+    """1X2 from Dixon-Coles goals (Poisson + low-score dependence), renormalised over the grid."""
+    lam_home, lam_away = poisson_lambdas(dr, mu, beta)
+    ph = _poisson_pmf(lam_home, max_goals)
+    pa = _poisson_pmf(lam_away, max_goals)
+    p_home = p_draw = p_away = 0.0
+    for i in range(max_goals + 1):
+        phi = ph[i]
+        for j in range(max_goals + 1):
+            pij = phi * pa[j]
+            if i <= 1 and j <= 1:
+                pij *= _dc_tau(i, j, lam_home, lam_away, rho)
+                # with rho < 0, tau(1,0)/(0,1) dip below 0 only once a lambda exceeds 1/|rho|
+                # (extreme dr, far outside [-800,800]); the clamp keeps the grid valid there
+                if pij < 0.0:
+                    pij = 0.0
+            if i > j:
+                p_home += pij
+            elif i == j:
+                p_draw += pij
+            else:
+                p_away += pij
+    total = p_home + p_draw + p_away
+    return p_home / total, p_draw / total, p_away / total
+
+
+def score_logprob(dr: float, mu: float, beta: float, h: int, a: int,
+                  rho: float = 0.0, max_goals: int = 15) -> float:
+    """Log of the grid-normalised joint probability of the exact score (h, a).
+
+    rho = 0.0 -> plain independent Poisson; rho != 0 -> Dixon-Coles. Used to compare how well
+    each goals model fits actual scorelines (Dixon-Coles' primary advantage).
+    """
+    grid = max(max_goals, h, a)
+    lam_home, lam_away = poisson_lambdas(dr, mu, beta)
+    ph = _poisson_pmf(lam_home, grid)
+    pa = _poisson_pmf(lam_away, grid)
+    total = 0.0
+    for i in range(grid + 1):
+        for j in range(grid + 1):
+            w = ph[i] * pa[j]
+            if rho and i <= 1 and j <= 1:
+                w *= _dc_tau(i, j, lam_home, lam_away, rho)
+            if w > 0.0:
+                total += w
+    w_ha = ph[h] * pa[a]
+    if rho and h <= 1 and a <= 1:
+        w_ha *= _dc_tau(h, a, lam_home, lam_away, rho)
+    return math.log(w_ha / total) if w_ha > 0.0 else float("-inf")
+
+
 def expected_score(probs) -> float:
     """Home expected points share implied by 1X2 probs (win=1, draw=0.5)."""
     p_home, p_draw, _ = probs
@@ -174,6 +242,37 @@ def fit_poisson(samples) -> tuple[float, float]:
 
     mu, beta = _coord_descent(objective, [(-1.0, 2.0), (0.0, 1.5)])
     return mu, beta
+
+
+def fit_dixoncoles(samples) -> tuple[float, float, float]:
+    """Fit (mu, beta, rho) to the scorelines by maximum likelihood (coordinate descent).
+
+    Dixon-Coles log-likelihood = the independent-Poisson term plus log(tau) on the four lowest
+    score cells. rho = 0 reduces to fit_poisson; the rho bound keeps tau positive on the data.
+    """
+    drs = [s.dr for s in samples]
+    home = [s.home_score for s in samples]
+    away = [s.away_score for s in samples]
+    n = len(samples)
+
+    def objective(params) -> float:
+        mu, beta, rho = params
+        total = 0.0
+        for dr, h, a in zip(drs, home, away):
+            x = dr / 400.0
+            z_home = mu + beta * x
+            z_away = mu - beta * x
+            lam_home = math.exp(z_home)
+            lam_away = math.exp(z_away)
+            ll = h * z_home - lam_home + a * z_away - lam_away
+            if h <= 1 and a <= 1:
+                tau = _dc_tau(h, a, lam_home, lam_away, rho)
+                ll += math.log(tau) if tau > 1e-12 else math.log(1e-12)
+            total -= ll
+        return total / n
+
+    mu, beta, rho = _coord_descent(objective, [(-1.0, 2.0), (0.0, 1.5), (-0.2, 0.2)])
+    return mu, beta, rho
 
 
 def _golden(f, lo: float, hi: float, tol: float = 1e-7, max_iter: int = 200) -> float:
