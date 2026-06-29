@@ -1,98 +1,98 @@
 rank,team,rating,games,provisional,last_match
-1,Argentina,2212,1071,False,2026-06-22
-2,Spain,2179,785,False,2026-06-21
-3,France,2140,937,False,2026-06-22
-4,England,2083,1092,False,2026-06-23
-5,Colombia,2080,640,False,2026-06-23
-6,Brazil,2067,1061,False,2026-06-19
-7,Germany,2031,1033,False,2026-06-20
-8,Netherlands,2030,881,False,2026-06-20
-9,Portugal,2030,697,False,2026-06-23
-10,Morocco,2006,619,False,2026-06-19
-11,Japan,2004,792,False,2026-06-20
-12,Norway,1995,874,False,2026-06-22
-13,Mexico,1987,1005,False,2026-06-18
-14,Switzerland,1947,886,False,2026-06-18
-15,Ecuador,1945,593,False,2026-06-20
-16,Croatia,1944,398,False,2026-06-23
-17,Belgium,1943,855,False,2026-06-21
-18,Uruguay,1926,972,False,2026-06-21
-19,United States,1918,792,False,2026-06-19
-20,Italy,1911,893,False,2026-06-07
-21,Denmark,1909,874,False,2026-06-07
-22,Austria,1903,862,False,2026-06-22
-23,Australia,1898,583,False,2026-06-19
-24,Paraguay,1891,785,False,2026-06-19
-25,Iran,1889,614,False,2026-06-21
-26,Algeria,1886,619,False,2026-06-22
-27,South Korea,1883,1009,False,2026-06-18
-28,Canada,1879,471,False,2026-06-18
-29,Turkey,1868,644,False,2026-06-19
-30,Yugoslavia,1863,483,False,1992-03-25
-31,Senegal,1863,640,False,2026-06-22
-32,Nigeria,1862,661,False,2026-06-10
-33,Egypt,1853,758,False,2026-06-21
+1,Argentina,2217,1072,False,2026-06-27
+2,Spain,2190,786,False,2026-06-26
+3,France,2172,938,False,2026-06-26
+4,England,2096,1093,False,2026-06-27
+5,Brazil,2088,1062,False,2026-06-24
+6,Colombia,2076,641,False,2026-06-27
+7,Netherlands,2040,882,False,2026-06-25
+8,Portugal,2034,698,False,2026-06-27
+9,Morocco,2017,620,False,2026-06-24
+10,Mexico,2001,1006,False,2026-06-24
+11,Germany,1994,1034,False,2026-06-25
+12,Japan,1987,793,False,2026-06-25
+13,Ecuador,1982,594,False,2026-06-25
+14,Switzerland,1979,887,False,2026-06-24
+15,Belgium,1966,856,False,2026-06-26
+16,Norway,1963,875,False,2026-06-26
+17,Croatia,1955,399,False,2026-06-27
+18,Uruguay,1915,973,False,2026-06-26
+19,Italy,1911,893,False,2026-06-07
+20,Denmark,1909,874,False,2026-06-07
+21,Turkey,1909,645,False,2026-06-25
+22,Austria,1902,863,False,2026-06-27
+23,Australia,1897,584,False,2026-06-25
+24,Senegal,1897,641,False,2026-06-26
+25,Paraguay,1892,786,False,2026-06-25
+26,Algeria,1887,620,False,2026-06-27
+27,Iran,1886,615,False,2026-06-26
+28,United States,1877,793,False,2026-06-25
+29,Yugoslavia,1863,483,False,1992-03-25
+30,Nigeria,1862,661,False,2026-06-10
+31,Ivory Coast,1857,639,False,2026-06-25
+32,Egypt,1856,759,False,2026-06-26
+33,Canada,1847,472,False,2026-06-24
 34,Russia,1838,749,False,2026-06-09
-35,Ivory Coast,1837,638,False,2026-06-20
+35,South Korea,1836,1010,False,2026-06-24
 36,Ukraine,1832,338,False,2026-06-07
-37,Scotland,1830,853,False,2026-06-19
-38,Venezuela,1809,460,False,2026-06-09
-39,Chile,1800,835,False,2026-06-09
-40,Czechoslovakia,1794,520,False,1993-11-17
-41,Basque Country,1794,64,False,2025-11-15
-42,Serbia,1784,348,False,2026-06-04
-43,Greece,1783,633,False,2026-06-07
-44,Sweden,1782,1103,False,2026-06-20
-45,Poland,1772,892,False,2026-06-03
-46,Panama,1770,541,False,2026-06-23
+37,DR Congo,1810,527,False,2026-06-27
+38,Scotland,1809,854,False,2026-06-24
+39,Venezuela,1809,460,False,2026-06-09
+40,Chile,1800,835,False,2026-06-09
+41,Sweden,1799,1104,False,2026-06-25
+42,Czechoslovakia,1794,520,False,1993-11-17
+43,Basque Country,1794,64,False,2025-11-15
+44,Serbia,1784,348,False,2026-06-04
+45,Greece,1783,633,False,2026-06-07
+46,Poland,1772,892,False,2026-06-03
 47,Jersey,1766,235,False,2025-07-18
 48,Hungary,1765,1006,False,2026-06-09
-49,DR Congo,1765,526,False,2026-06-23
-50,Uzbekistan,1765,356,False,2026-06-23
-51,Peru,1762,714,False,2026-06-08
-52,Czech Republic,1755,362,False,2026-06-18
-53,Kosovo,1755,104,False,2026-06-07
-54,Republic of Ireland,1753,633,False,2026-06-05
-55,Wales,1737,726,False,2026-06-06
-56,Costa Rica,1735,724,False,2026-06-10
-57,Slovenia,1730,317,False,2026-06-07
-58,Guernsey,1728,240,False,2023-07-13
-59,Slovakia,1727,367,False,2026-06-05
-60,German DR,1725,298,False,1990-09-12
-61,Jordan,1719,487,False,2026-06-22
+49,Peru,1762,714,False,2026-06-08
+50,Panama,1757,542,False,2026-06-27
+51,Kosovo,1755,104,False,2026-06-07
+52,Republic of Ireland,1753,633,False,2026-06-05
+53,Czech Republic,1741,363,False,2026-06-24
+54,Wales,1737,726,False,2026-06-06
+55,Costa Rica,1735,724,False,2026-06-10
+56,Slovenia,1730,317,False,2026-06-07
+57,Guernsey,1728,240,False,2023-07-13
+58,Slovakia,1727,367,False,2026-06-05
+59,German DR,1725,298,False,1990-09-12
+60,Uzbekistan,1720,357,False,2026-06-27
+61,Jordan,1714,488,False,2026-06-27
 62,Cameroon,1713,616,False,2026-03-31
 63,Bolivia,1711,534,False,2026-06-10
-64,New Zealand,1708,418,False,2026-06-21
-65,Mali,1708,569,False,2026-06-04
-66,Saudi Arabia,1702,743,False,2026-06-21
-67,Georgia,1702,307,False,2026-06-05
-68,Iraq,1701,657,False,2026-06-22
-69,Cape Verde,1693,237,False,2026-06-21
-70,Ghana,1692,673,False,2026-06-23
-71,Romania,1689,766,False,2026-06-06
-72,Honduras,1689,620,False,2026-06-06
+64,Mali,1708,569,False,2026-06-04
+65,South Africa,1707,483,False,2026-06-24
+66,Georgia,1702,307,False,2026-06-05
+67,Saudi Arabia,1701,744,False,2026-06-26
+68,Cape Verde,1694,238,False,2026-06-26
+69,Romania,1689,766,False,2026-06-06
+70,Honduras,1689,620,False,2026-06-06
+71,New Zealand,1685,419,False,2026-06-26
+72,Ghana,1681,674,False,2026-06-27
 73,Israel,1680,498,False,2026-06-03
-74,Isle of Man,1672,58,False,2025-07-18
-75,Albania,1669,398,False,2026-06-06
-76,Tunisia,1665,680,False,2026-06-20
-77,Padania,1664,45,False,2019-06-08
-78,United Arab Emirates,1663,612,False,2025-12-15
-79,Haiti,1661,512,False,2026-06-19
+74,Bosnia and Herzegovina,1680,286,False,2026-06-24
+75,Isle of Man,1672,58,False,2025-07-18
+76,Albania,1669,398,False,2026-06-06
+77,Iraq,1667,658,False,2026-06-26
+78,Padania,1664,45,False,2019-06-08
+79,United Arab Emirates,1663,612,False,2025-12-15
 80,Occitania,1661,33,False,2014-12-30
-81,South Africa,1660,482,False,2026-06-18
-82,Northern Ireland,1658,707,False,2026-06-08
-83,Catalonia,1655,48,False,2019-03-25
-84,Jamaica,1650,663,False,2026-06-06
-85,Burkina Faso,1648,464,False,2026-06-09
-86,Bosnia and Herzegovina,1644,285,False,2026-06-18
+81,Northern Ireland,1658,707,False,2026-06-08
+82,Catalonia,1655,48,False,2019-03-25
+83,Tunisia,1655,681,False,2026-06-25
+84,Haiti,1650,513,False,2026-06-24
+85,Jamaica,1650,663,False,2026-06-06
+86,Burkina Faso,1648,464,False,2026-06-09
 87,Northern Cyprus,1638,34,False,2018-06-09
 88,North Macedonia,1638,306,False,2026-06-01
 89,Guatemala,1631,554,False,2026-06-07
 90,Iceland,1630,522,False,2026-06-09
 91,Isle of Wight,1628,48,False,2023-07-13
-92,Curaçao,1618,387,False,2026-06-20
-93,Ynys Môn,1610,67,False,2025-07-17
-94,Iraqi Kurdistan,1610,27,True,2016-06-04
+92,Ynys Môn,1610,67,False,2025-07-17
+93,Iraqi Kurdistan,1610,27,True,2016-06-04
+94,Curaçao,1598,388,False,2026-06-25
 95,Andalusia,1596,13,True,2013-06-07
 96,Finland,1595,818,False,2026-06-05
 97,Abkhazia,1595,33,False,2019-06-08
@@ -105,21 +105,21 @@ rank,team,rating,games,provisional,last_match
 104,Belarus,1576,315,False,2026-06-09
 105,Guinea,1576,539,False,2026-06-04
 106,New Caledonia,1574,265,False,2026-03-26
-107,Qatar,1574,637,False,2026-06-18
-108,Kárpátalja,1572,11,True,2018-06-09
-109,Panjab,1568,19,True,2019-12-29
-110,Réunion,1567,124,False,2023-09-02
-111,Rhodes,1566,18,True,2011-06-27
-112,Ellan Vannin,1560,22,True,2018-06-03
-113,County of Nice,1560,9,True,2015-06-21
-114,Tamil Eelam,1558,28,True,2025-07-04
-115,Menorca,1555,25,True,2023-07-13
-116,Yorkshire,1553,7,True,2019-06-01
-117,Corsica,1550,9,True,2017-05-26
-118,Zambia,1548,793,False,2026-03-31
-119,China,1546,702,False,2026-06-09
-120,Kurdistan,1545,5,True,2013-06-28
-121,Artsakh,1545,11,True,2019-06-08
+107,Kárpátalja,1572,11,True,2018-06-09
+108,Panjab,1568,19,True,2019-12-29
+109,Réunion,1567,124,False,2023-09-02
+110,Rhodes,1566,18,True,2011-06-27
+111,Ellan Vannin,1560,22,True,2018-06-03
+112,County of Nice,1560,9,True,2015-06-21
+113,Tamil Eelam,1558,28,True,2025-07-04
+114,Menorca,1555,25,True,2023-07-13
+115,Yorkshire,1553,7,True,2019-06-01
+116,Corsica,1550,9,True,2017-05-26
+117,Zambia,1548,793,False,2026-03-31
+118,China,1546,702,False,2026-06-09
+119,Kurdistan,1545,5,True,2013-06-28
+120,Artsakh,1545,11,True,2019-06-08
+121,Qatar,1538,638,False,2026-06-24
 122,Trinidad and Tobago,1537,753,False,2026-06-09
 123,Bahrain,1536,584,False,2026-06-05
 124,Gambia,1535,266,False,2026-05-29
