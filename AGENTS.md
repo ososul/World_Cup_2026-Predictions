@@ -1,6 +1,14 @@
 Behavioral guidelines to reduce common LLM coding mistakes.
 **Tradeoff:** bias toward caution over speed. For trivial tasks, use judgment.
 
+**Project direction (scope).** The WC-2026 ratings + match-odds app (in `web/`) is the
+**foundation of a larger, still-undefined platform** — not the finished scope. Build new
+capabilities **incrementally on the existing seams** (`web/lib/data.ts` data seam, the pure
+Python compute core, room reserved for a future `api/`); don't re-architect, and don't assume
+the project is limited to what exists today. "Simplicity First" (§2) means *no speculative
+gold-plating per task* — it does **not** mean the project stays small. Clarify new scope with
+the user as it emerges.
+
 - **Respect the stated phase.** If the task is "document/prepare," don't start building.
 
 ## 1. Think Before Coding

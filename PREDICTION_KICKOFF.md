@@ -4,6 +4,10 @@ Self-contained handoff for a fresh chat to start the **prediction layer** of the
 2026 project. The rating engine (**Preliminary Elo**) is complete and validated; this phase
 turns ratings into match + tournament probabilities.
 
+> **Bigger picture:** WC-2026 predictions are the first deliverable of a larger, still-undefined
+> platform built incrementally on the `web/` foundation — not the whole of it. See `AGENTS.md`
+> → "Project direction (scope)".
+
 ## 0. Read these first
 - **`AGENTS.md` / `CLAUDE.md`** (identical) — working norms. Critical for this phase:
   model fitting is validated on a **temporal held-out split** with a **proper score
