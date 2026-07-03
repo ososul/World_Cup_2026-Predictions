@@ -27,7 +27,7 @@ export function OddsPanel({
   }, [teams]);
 
   const [modelId, setModelId] = useState(cfg.models[0]?.id ?? "");
-  const [wcOnly, setWcOnly] = useState(false);
+  const [wcOnly, setWcOnly] = useState(true);
   const [venue, setVenue] = useState<Venue>("N");
 
   const teamList = useMemo(

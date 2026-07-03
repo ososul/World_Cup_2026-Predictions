@@ -22,7 +22,7 @@ export function RatingsView({
   wc2026: string[];
 }) {
   const [systemId, setSystemId] = useState(systems[0]?.def.id ?? "");
-  const [mode, setMode] = useState<Mode>("all");
+  const [mode, setMode] = useState<Mode>("wc");
   const active = systems.find((s) => s.def.id === systemId) ?? systems[0];
   if (!active) return null;
 
