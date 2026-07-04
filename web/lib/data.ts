@@ -11,6 +11,8 @@ import type {
   FifaRow,
   History,
   PredictConfig,
+  GroupsData,
+  BracketData,
 } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "public", "data");
@@ -41,4 +43,14 @@ export function getFifa(): Promise<FifaRow[]> {
 
 export function getPredictConfig(): Promise<PredictConfig> {
   return readJSON<PredictConfig>("predict.json");
+}
+
+// The finished group stage (tables + results).
+export function getGroups(): Promise<GroupsData> {
+  return readJSON<GroupsData>("groups.json");
+}
+
+// The knockout bracket: match quotes + exact-DP projection.
+export function getBracket(): Promise<BracketData> {
+  return readJSON<BracketData>("bracket.json");
 }

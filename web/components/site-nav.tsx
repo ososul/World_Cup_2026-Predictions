@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 const links = [
   { href: "/", label: "Ratings" },
   { href: "/odds", label: "Match odds" },
+  { href: "/groups", label: "Groups" },
+  { href: "/bracket", label: "Bracket" },
 ];
 
 export function SiteNav() {
