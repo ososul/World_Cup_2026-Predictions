@@ -1,0 +1,41 @@
+{
+  "_instructions": "Knockout bracket. The full M73-M104 structure (match numbers, rounds, slot references) is pre-filled from 2026_Info.md and must NOT be changed. YOU fill only: (1) For the 16 R32 matches (M73-M88): 'home' and 'away' with the ACTUAL qualified teams (dataset spelling), 'date' (YYYY-MM-DD), and 'venueCountry' (one of \"United States\", \"Mexico\", \"Canada\"). (2) For later rounds (M89-M104): leave 'home'/'away' as null (they resolve from play); fill 'date' and 'venueCountry' when known (M103/M104 pre-filled). 'homeSlot'/'awaySlot' are the fixed bracket references (e.g. \"2A\" = runner-up of Group A, \"1E\" = winner of Group E, \"3rd[A/B/C/D/F]\" = a best-3rd from those groups, \"W74\" = winner of match 74, \"L101\" = loser of match 101) — used only to validate your R32 entries against wc2026_groups.json. venueCountry drives host advantage: +90 applies only when a host nation (USA/Mexico/Canada) plays in its own country.",
+  "matches": [
+    { "match": 73, "round": "R32", "homeSlot": "2A", "awaySlot": "2B", "home": "South Africa", "away": "Canada", "date": "2026-06-28", "venueCountry": "United States" },
+    { "match": 74, "round": "R32", "homeSlot": "1E", "awaySlot": "3rd[A/B/C/D/F]", "home": "Germany", "away": "Paraguay", "date": "2026-06-29", "venueCountry": "United States" },
+    { "match": 75, "round": "R32", "homeSlot": "1F", "awaySlot": "2C", "home": "Netherlands", "away": "Morocco", "date": "2026-06-29", "venueCountry": "Mexico" },
+    { "match": 76, "round": "R32", "homeSlot": "1C", "awaySlot": "2F", "home": "Brazil", "away": "Japan", "date": "2026-06-29", "venueCountry": "United States" },
+    { "match": 77, "round": "R32", "homeSlot": "1I", "awaySlot": "3rd[C/D/F/G/H]", "home": "France", "away": "Sweden", "date": "2026-06-30", "venueCountry": "United States" },
+    { "match": 78, "round": "R32", "homeSlot": "2E", "awaySlot": "2I", "home": "Ivory Coast", "away": "Norway", "date": "2026-06-30", "venueCountry": "United States" },
+    { "match": 79, "round": "R32", "homeSlot": "1A", "awaySlot": "3rd[C/E/F/H/I]", "home": "Mexico", "away": "Ecuador", "date": "2026-06-30", "venueCountry": "Mexico" },
+    { "match": 80, "round": "R32", "homeSlot": "1L", "awaySlot": "3rd[E/H/I/J/K]", "home": "England", "away": "DR Congo", "date": "2026-07-01", "venueCountry": "United States" },
+    { "match": 81, "round": "R32", "homeSlot": "1D", "awaySlot": "3rd[B/E/F/I/J]", "home": "United States", "away": "Bosnia and Herzegovina", "date": "2026-07-01", "venueCountry": "United States" },
+    { "match": 82, "round": "R32", "homeSlot": "1G", "awaySlot": "3rd[A/E/H/I/J]", "home": "Belgium", "away": "Senegal", "date": "2026-07-01", "venueCountry": "United States" },
+    { "match": 83, "round": "R32", "homeSlot": "2K", "awaySlot": "2L", "home": "Portugal", "away": "Croatia", "date": "2026-07-02", "venueCountry": "Canada" },
+    { "match": 84, "round": "R32", "homeSlot": "1H", "awaySlot": "2J", "home": "Spain", "away": "Austria", "date": "2026-07-02", "venueCountry": "United States" },
+    { "match": 85, "round": "R32", "homeSlot": "1B", "awaySlot": "3rd[E/F/G/I/J]", "home": "Switzerland", "away": "Algeria", "date": "2026-07-02", "venueCountry": "Canada" },
+    { "match": 86, "round": "R32", "homeSlot": "1J", "awaySlot": "2H", "home": "Argentina", "away": "Cape Verde", "date": "2026-07-03", "venueCountry": "United States" },
+    { "match": 87, "round": "R32", "homeSlot": "1K", "awaySlot": "3rd[D/E/I/J/L]", "home": "Colombia", "away": "Ghana", "date": "2026-07-03", "venueCountry": "United States" },
+    { "match": 88, "round": "R32", "homeSlot": "2D", "awaySlot": "2G", "home": "Australia", "away": "Egypt", "date": "2026-07-03", "venueCountry": "United States" },
+
+    { "match": 89, "round": "R16", "homeSlot": "W74", "awaySlot": "W77", "home": null, "away": null, "date": "2026-07-04", "venueCountry": "United States" },
+    { "match": 90, "round": "R16", "homeSlot": "W73", "awaySlot": "W75", "home": null, "away": null, "date": "2026-07-04", "venueCountry": "United States" },
+    { "match": 91, "round": "R16", "homeSlot": "W76", "awaySlot": "W78", "home": null, "away": null, "date": "2026-07-05", "venueCountry": "United States" },
+    { "match": 92, "round": "R16", "homeSlot": "W79", "awaySlot": "W80", "home": null, "away": null, "date": "2026-07-05", "venueCountry": "Mexico" },
+    { "match": 93, "round": "R16", "homeSlot": "W83", "awaySlot": "W84", "home": null, "away": null, "date": "2026-07-06", "venueCountry": "United States" },
+    { "match": 94, "round": "R16", "homeSlot": "W81", "awaySlot": "W82", "home": null, "away": null, "date": "2026-07-06", "venueCountry": "United States" },
+    { "match": 95, "round": "R16", "homeSlot": "W86", "awaySlot": "W88", "home": null, "away": null, "date": "2026-07-07", "venueCountry": "United States" },
+    { "match": 96, "round": "R16", "homeSlot": "W85", "awaySlot": "W87", "home": null, "away": null, "date": "2026-07-07", "venueCountry": "Canada" },
+
+    { "match": 97, "round": "QF", "homeSlot": "W89", "awaySlot": "W90", "home": null, "away": null, "date": "2026-07-09", "venueCountry": "United States" },
+    { "match": 98, "round": "QF", "homeSlot": "W93", "awaySlot": "W94", "home": null, "away": null, "date": "2026-07-10", "venueCountry": "United States" },
+    { "match": 99, "round": "QF", "homeSlot": "W91", "awaySlot": "W92", "home": null, "away": null, "date": "2026-07-11", "venueCountry": "United States" },
+    { "match": 100, "round": "QF", "homeSlot": "W95", "awaySlot": "W96", "home": null, "away": null, "date": "2026-07-11", "venueCountry": "United States" },
+
+    { "match": 101, "round": "SF", "homeSlot": "W97", "awaySlot": "W98", "home": null, "away": null, "date": "2026-07-14", "venueCountry": "United States" },
+    { "match": 102, "round": "SF", "homeSlot": "W99", "awaySlot": "W100", "home": null, "away": null, "date": "2026-07-15", "venueCountry": "United States" },
+
+    { "match": 103, "round": "3rd", "homeSlot": "L101", "awaySlot": "L102", "home": null, "away": null, "date": "2026-07-18", "venueCountry": "United States" },
+    { "match": 104, "round": "Final", "homeSlot": "W101", "awaySlot": "W102", "home": null, "away": null, "date": "2026-07-19", "venueCountry": "United States" }
+  ]
+}

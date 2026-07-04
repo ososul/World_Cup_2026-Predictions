@@ -1,0 +1,15 @@
+{
+  "_instructions": "Final group standings — hand-entered verified fact (code never derives these). For each group A-L: (1) reorder the 'order' array into the ACTUAL final standings, 1st place first -> 4th place last (teams are pre-filled in dataset spelling; just reorder them). (2) set 'thirdAdvanced' to true if that group's 3rd-placed team is one of the 8 best thirds that advanced to the R32, else false. Exactly 8 of the 12 groups must have thirdAdvanced=true. Do NOT rename teams (spellings already match the dataset). The W/D/L/GF/GA/GD/Pts tallies are computed from results.csv, not entered here.",
+  "A": { "order": ["Mexico", "South Africa", "South Korea", "Czech Republic"], "thirdAdvanced": false },
+  "B": { "order": ["Switzerland", "Canada", "Bosnia and Herzegovina", "Qatar"], "thirdAdvanced": true },
+  "C": { "order": ["Brazil", "Morocco", "Scotland", "Haiti"], "thirdAdvanced": false },
+  "D": { "order": ["United States", "Australia", "Paraguay", "Turkey"], "thirdAdvanced": true },
+  "E": { "order": ["Germany", "Ivory Coast", "Ecuador", "Curaçao"], "thirdAdvanced": true },
+  "F": { "order": ["Netherlands", "Japan", "Sweden", "Tunisia"], "thirdAdvanced": true },
+  "G": { "order": ["Belgium", "Egypt", "Iran", "New Zealand"], "thirdAdvanced": false },
+  "H": { "order": ["Spain", "Cape Verde", "Uruguay", "Saudi Arabia"], "thirdAdvanced": false },
+  "I": { "order": ["France", "Norway", "Senegal", "Iraq"], "thirdAdvanced": true },
+  "J": { "order": ["Argentina", "Austria", "Algeria", "Jordan"], "thirdAdvanced": true },
+  "K": { "order": ["Colombia", "Portugal", "DR Congo", "Uzbekistan"], "thirdAdvanced": true },
+  "L": { "order": ["England", "Croatia", "Ghana", "Panama"], "thirdAdvanced": true }
+}
