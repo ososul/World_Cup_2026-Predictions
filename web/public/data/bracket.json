@@ -1,0 +1,3485 @@
+{
+  "ratingSystem": "prelim_elo",
+  "homeAdvantage": 90,
+  "generated": "2026-07-04T17:04:12Z",
+  "models": [
+    {
+      "id": "davidson",
+      "label": "Davidson (Preliminary Elo)",
+      "params": {
+        "nu": 0.7031
+      }
+    },
+    {
+      "id": "ordlogit",
+      "label": "Ordered logistic (Preliminary Elo)",
+      "params": {
+        "b": 0.005293,
+        "theta": 0.60047
+      }
+    },
+    {
+      "id": "dixoncoles",
+      "label": "Dixon-Coles (Preliminary Elo)",
+      "params": {
+        "mu": 0.28104,
+        "beta": 0.75489,
+        "rho": -0.0507
+      }
+    },
+    {
+      "id": "ensemble",
+      "label": "Ensemble (model average)",
+      "params": {}
+    }
+  ],
+  "resolution": {
+    "muPois": 0.2804,
+    "betaPois": 0.75505,
+    "pens": 0.5
+  },
+  "matches": [
+    {
+      "match": 73,
+      "round": "R32",
+      "date": "2026-06-28",
+      "venueCountry": "United States",
+      "homeSlot": "2A",
+      "awaySlot": "2B",
+      "homeTeam": "South Africa",
+      "awayTeam": "Canada",
+      "status": "played",
+      "result": {
+        "homeScore": 0,
+        "awayScore": 1,
+        "winner": "Canada",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.20162,
+            0.23663,
+            0.56175
+          ],
+          "et": [
+            0.15974,
+            0.47389,
+            0.36637
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.29549
+        },
+        "ordlogit": {
+          "p90": [
+            0.17615,
+            0.23924,
+            0.58461
+          ],
+          "et": [
+            0.15974,
+            0.47389,
+            0.36637
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.27105
+        },
+        "dixoncoles": {
+          "p90": [
+            0.18346,
+            0.23531,
+            0.58123
+          ],
+          "et": [
+            0.15974,
+            0.47389,
+            0.36637
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.2768
+        },
+        "ensemble": {
+          "p90": [
+            0.18708,
+            0.23706,
+            0.57586
+          ],
+          "et": [
+            0.15974,
+            0.47389,
+            0.36637
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.28111
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.1121
+        ],
+        [
+          "0-1",
+          0.1073
+        ],
+        [
+          "0-2",
+          0.10444
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 74,
+      "round": "R32",
+      "date": "2026-06-29",
+      "venueCountry": "United States",
+      "homeSlot": "1E",
+      "awaySlot": "3rd[A/B/C/D/F]",
+      "homeTeam": "Germany",
+      "awayTeam": "Paraguay",
+      "status": "played",
+      "result": {
+        "homeScore": 1,
+        "awayScore": 1,
+        "winner": "Paraguay",
+        "pens": true
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.46111,
+            0.25458,
+            0.28432
+          ],
+          "et": [
+            0.30247,
+            0.49282,
+            0.20471
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.60084
+        },
+        "ordlogit": {
+          "p90": [
+            0.46112,
+            0.27872,
+            0.26017
+          ],
+          "et": [
+            0.30247,
+            0.49282,
+            0.20471
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.6141
+        },
+        "dixoncoles": {
+          "p90": [
+            0.46441,
+            0.26466,
+            0.27093
+          ],
+          "et": [
+            0.30247,
+            0.49282,
+            0.20471
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.60967
+        },
+        "ensemble": {
+          "p90": [
+            0.46221,
+            0.26598,
+            0.2718
+          ],
+          "et": [
+            0.30247,
+            0.49282,
+            0.20471
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.60821
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.12608
+        ],
+        [
+          "1-0",
+          0.10008
+        ],
+        [
+          "2-1",
+          0.09312
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 75,
+      "round": "R32",
+      "date": "2026-06-29",
+      "venueCountry": "Mexico",
+      "homeSlot": "1F",
+      "awaySlot": "2C",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Morocco",
+      "status": "played",
+      "result": {
+        "homeScore": 1,
+        "awayScore": 1,
+        "winner": "Morocco",
+        "pens": true
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.39031,
+            0.25982,
+            0.34987
+          ],
+          "et": [
+            0.26204,
+            0.49805,
+            0.23991
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.52309
+        },
+        "ordlogit": {
+          "p90": [
+            0.37756,
+            0.29086,
+            0.33158
+          ],
+          "et": [
+            0.26204,
+            0.49805,
+            0.23991
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.52621
+        },
+        "dixoncoles": {
+          "p90": [
+            0.38548,
+            0.27317,
+            0.34135
+          ],
+          "et": [
+            0.26204,
+            0.49805,
+            0.23991
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.52509
+        },
+        "ensemble": {
+          "p90": [
+            0.38445,
+            0.27462,
+            0.34093
+          ],
+          "et": [
+            0.26204,
+            0.49805,
+            0.23991
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.5248
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.13014
+        ],
+        [
+          "1-0",
+          0.09065
+        ],
+        [
+          "2-1",
+          0.08502
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 76,
+      "round": "R32",
+      "date": "2026-06-29",
+      "venueCountry": "United States",
+      "homeSlot": "1C",
+      "awaySlot": "2F",
+      "homeTeam": "Brazil",
+      "awayTeam": "Japan",
+      "status": "played",
+      "result": {
+        "homeScore": 2,
+        "awayScore": 1,
+        "winner": "Brazil",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.52709,
+            0.24415,
+            0.22876
+          ],
+          "et": [
+            0.34325,
+            0.48203,
+            0.17473
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.66974
+        },
+        "ordlogit": {
+          "p90": [
+            0.54167,
+            0.25539,
+            0.20294
+          ],
+          "et": [
+            0.34325,
+            0.48203,
+            0.17473
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.69088
+        },
+        "dixoncoles": {
+          "p90": [
+            0.54032,
+            0.24765,
+            0.21204
+          ],
+          "et": [
+            0.34325,
+            0.48203,
+            0.17473
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.68501
+        },
+        "ensemble": {
+          "p90": [
+            0.53636,
+            0.24906,
+            0.21458
+          ],
+          "et": [
+            0.34325,
+            0.48203,
+            0.17473
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.68187
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.11798
+        ],
+        [
+          "1-0",
+          0.10576
+        ],
+        [
+          "2-1",
+          0.09776
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 77,
+      "round": "R32",
+      "date": "2026-06-30",
+      "venueCountry": "United States",
+      "homeSlot": "1I",
+      "awaySlot": "3rd[C/D/F/G/H]",
+      "homeTeam": "France",
+      "awayTeam": "Sweden",
+      "status": "played",
+      "result": {
+        "homeScore": 3,
+        "awayScore": 0,
+        "winner": "France",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.75274,
+            0.16979,
+            0.07747
+          ],
+          "et": [
+            0.5328,
+            0.38544,
+            0.08175
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.87593
+        },
+        "ordlogit": {
+          "p90": [
+            0.81613,
+            0.12038,
+            0.06349
+          ],
+          "et": [
+            0.5328,
+            0.38544,
+            0.08175
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.90347
+        },
+        "dixoncoles": {
+          "p90": [
+            0.81801,
+            0.1266,
+            0.05539
+          ],
+          "et": [
+            0.5328,
+            0.38544,
+            0.08175
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.90987
+        },
+        "ensemble": {
+          "p90": [
+            0.79563,
+            0.13892,
+            0.06545
+          ],
+          "et": [
+            0.5328,
+            0.38544,
+            0.08175
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.89642
+        }
+      },
+      "scorelines": [
+        [
+          "2-0",
+          0.12746
+        ],
+        [
+          "3-0",
+          0.1186
+        ],
+        [
+          "1-0",
+          0.08842
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 78,
+      "round": "R32",
+      "date": "2026-06-30",
+      "venueCountry": "United States",
+      "homeSlot": "2E",
+      "awaySlot": "2I",
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Norway",
+      "status": "played",
+      "result": {
+        "homeScore": 1,
+        "awayScore": 2,
+        "winner": "Norway",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.22621,
+            0.24351,
+            0.53028
+          ],
+          "et": [
+            0.17333,
+            0.48135,
+            0.34532
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.32702
+        },
+        "ordlogit": {
+          "p90": [
+            0.20039,
+            0.25401,
+            0.54561
+          ],
+          "et": [
+            0.17333,
+            0.48135,
+            0.34532
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.30555
+        },
+        "dixoncoles": {
+          "p90": [
+            0.20934,
+            0.24661,
+            0.54405
+          ],
+          "et": [
+            0.17333,
+            0.48135,
+            0.34532
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.31144
+        },
+        "ensemble": {
+          "p90": [
+            0.21198,
+            0.24804,
+            0.53998
+          ],
+          "et": [
+            0.17333,
+            0.48135,
+            0.34532
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.31467
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.11748
+        ],
+        [
+          "0-1",
+          0.10595
+        ],
+        [
+          "1-2",
+          0.09791
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 79,
+      "round": "R32",
+      "date": "2026-06-30",
+      "venueCountry": "Mexico",
+      "homeSlot": "1A",
+      "awaySlot": "3rd[C/E/F/H/I]",
+      "homeTeam": "Mexico",
+      "awayTeam": "Ecuador",
+      "status": "played",
+      "result": {
+        "homeScore": 2,
+        "awayScore": 0,
+        "winner": "Mexico",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.55448,
+            0.23832,
+            0.2072
+          ],
+          "et": [
+            0.3614,
+            0.47575,
+            0.16285
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.6973
+        },
+        "ordlogit": {
+          "p90": [
+            0.57558,
+            0.24283,
+            0.18159
+          ],
+          "et": [
+            0.3614,
+            0.47575,
+            0.16285
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.72111
+        },
+        "dixoncoles": {
+          "p90": [
+            0.57259,
+            0.23809,
+            0.18932
+          ],
+          "et": [
+            0.3614,
+            0.47575,
+            0.16285
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.71527
+        },
+        "ensemble": {
+          "p90": [
+            0.56755,
+            0.23975,
+            0.1927
+          ],
+          "et": [
+            0.3614,
+            0.47575,
+            0.16285
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.71123
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.11342
+        ],
+        [
+          "1-0",
+          0.10707
+        ],
+        [
+          "2-0",
+          0.10292
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 80,
+      "round": "R32",
+      "date": "2026-07-01",
+      "venueCountry": "United States",
+      "homeSlot": "1L",
+      "awaySlot": "3rd[E/H/I/J/K]",
+      "homeTeam": "England",
+      "awayTeam": "DR Congo",
+      "status": "played",
+      "result": {
+        "homeScore": 2,
+        "awayScore": 1,
+        "winner": "England",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.68343,
+            0.19916,
+            0.11741
+          ],
+          "et": [
+            0.4621,
+            0.42834,
+            0.10956
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.81812
+        },
+        "ordlogit": {
+          "p90": [
+            0.73483,
+            0.16722,
+            0.09795
+          ],
+          "et": [
+            0.4621,
+            0.42834,
+            0.10956
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.84792
+        },
+        "dixoncoles": {
+          "p90": [
+            0.73056,
+            0.17376,
+            0.09569
+          ],
+          "et": [
+            0.4621,
+            0.42834,
+            0.10956
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.84806
+        },
+        "ensemble": {
+          "p90": [
+            0.71627,
+            0.18005,
+            0.10368
+          ],
+          "et": [
+            0.4621,
+            0.42834,
+            0.10956
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.83803
+        }
+      },
+      "scorelines": [
+        [
+          "2-0",
+          0.12503
+        ],
+        [
+          "1-0",
+          0.10197
+        ],
+        [
+          "3-0",
+          0.09834
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 81,
+      "round": "R32",
+      "date": "2026-07-01",
+      "venueCountry": "United States",
+      "homeSlot": "1D",
+      "awaySlot": "3rd[B/E/F/I/J]",
+      "homeTeam": "United States",
+      "awayTeam": "Bosnia and Herzegovina",
+      "status": "played",
+      "result": {
+        "homeScore": 2,
+        "awayScore": 0,
+        "winner": "United States",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.69104,
+            0.19623,
+            0.11272
+          ],
+          "et": [
+            0.46913,
+            0.42438,
+            0.10649
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.82474
+        },
+        "ordlogit": {
+          "p90": [
+            0.74401,
+            0.16217,
+            0.09382
+          ],
+          "et": [
+            0.46913,
+            0.42438,
+            0.10649
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.8545
+        },
+        "dixoncoles": {
+          "p90": [
+            0.74014,
+            0.16898,
+            0.09088
+          ],
+          "et": [
+            0.46913,
+            0.42438,
+            0.10649
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.85527
+        },
+        "ensemble": {
+          "p90": [
+            0.72507,
+            0.17579,
+            0.09914
+          ],
+          "et": [
+            0.46913,
+            0.42438,
+            0.10649
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.84484
+        }
+      },
+      "scorelines": [
+        [
+          "2-0",
+          0.12579
+        ],
+        [
+          "1-0",
+          0.10093
+        ],
+        [
+          "3-0",
+          0.10064
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 82,
+      "round": "R32",
+      "date": "2026-07-01",
+      "venueCountry": "United States",
+      "homeSlot": "1G",
+      "awaySlot": "3rd[A/E/H/I/J]",
+      "homeTeam": "Belgium",
+      "awayTeam": "Senegal",
+      "status": "played",
+      "result": {
+        "homeScore": 3,
+        "awayScore": 2,
+        "winner": "Belgium",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.49702,
+            0.24954,
+            0.25344
+          ],
+          "et": [
+            0.3242,
+            0.48768,
+            0.18812
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.63877
+        },
+        "ordlogit": {
+          "p90": [
+            0.50471,
+            0.26732,
+            0.22797
+          ],
+          "et": [
+            0.3242,
+            0.48768,
+            0.18812
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.65656
+        },
+        "dixoncoles": {
+          "p90": [
+            0.50541,
+            0.25646,
+            0.23813
+          ],
+          "et": [
+            0.3242,
+            0.48768,
+            0.18812
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.65109
+        },
+        "ensemble": {
+          "p90": [
+            0.50238,
+            0.25777,
+            0.23985
+          ],
+          "et": [
+            0.3242,
+            0.48768,
+            0.18812
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.64881
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.12217
+        ],
+        [
+          "1-0",
+          0.10359
+        ],
+        [
+          "2-1",
+          0.09603
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 83,
+      "round": "R32",
+      "date": "2026-07-02",
+      "venueCountry": "Canada",
+      "homeSlot": "2K",
+      "awaySlot": "2L",
+      "homeTeam": "Portugal",
+      "awayTeam": "Croatia",
+      "status": "played",
+      "result": {
+        "homeScore": 2,
+        "awayScore": 1,
+        "winner": "Portugal",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.50566,
+            0.2481,
+            0.24624
+          ],
+          "et": [
+            0.32959,
+            0.48618,
+            0.18423
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.64774
+        },
+        "ordlogit": {
+          "p90": [
+            0.51529,
+            0.2641,
+            0.22061
+          ],
+          "et": [
+            0.32959,
+            0.48618,
+            0.18423
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.66654
+        },
+        "dixoncoles": {
+          "p90": [
+            0.51539,
+            0.25411,
+            0.23051
+          ],
+          "et": [
+            0.32959,
+            0.48618,
+            0.18423
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.66091
+        },
+        "ensemble": {
+          "p90": [
+            0.51211,
+            0.25544,
+            0.23245
+          ],
+          "et": [
+            0.32959,
+            0.48618,
+            0.18423
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.6584
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.12105
+        ],
+        [
+          "1-0",
+          0.10429
+        ],
+        [
+          "2-1",
+          0.0966
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 84,
+      "round": "R32",
+      "date": "2026-07-02",
+      "venueCountry": "United States",
+      "homeSlot": "1H",
+      "awaySlot": "2J",
+      "homeTeam": "Spain",
+      "awayTeam": "Austria",
+      "status": "played",
+      "result": {
+        "homeScore": 3,
+        "awayScore": 0,
+        "winner": "Spain",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.69687,
+            0.19394,
+            0.10918
+          ],
+          "et": [
+            0.47462,
+            0.42123,
+            0.10415
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.82977
+        },
+        "ordlogit": {
+          "p90": [
+            0.751,
+            0.15828,
+            0.09072
+          ],
+          "et": [
+            0.47462,
+            0.42123,
+            0.10415
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.85946
+        },
+        "dixoncoles": {
+          "p90": [
+            0.74749,
+            0.16525,
+            0.08726
+          ],
+          "et": [
+            0.47462,
+            0.42123,
+            0.10415
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.86073
+        },
+        "ensemble": {
+          "p90": [
+            0.73179,
+            0.17249,
+            0.09572
+          ],
+          "et": [
+            0.47462,
+            0.42123,
+            0.10415
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.84999
+        }
+      },
+      "scorelines": [
+        [
+          "2-0",
+          0.1263
+        ],
+        [
+          "3-0",
+          0.10239
+        ],
+        [
+          "1-0",
+          0.10007
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 85,
+      "round": "R32",
+      "date": "2026-07-02",
+      "venueCountry": "Canada",
+      "homeSlot": "1B",
+      "awaySlot": "3rd[E/F/G/I/J]",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Algeria",
+      "status": "played",
+      "result": {
+        "homeScore": 2,
+        "awayScore": 0,
+        "winner": "Switzerland",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.54086,
+            0.24133,
+            0.21781
+          ],
+          "et": [
+            0.35227,
+            0.47901,
+            0.16872
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.68367
+        },
+        "ordlogit": {
+          "p90": [
+            0.55869,
+            0.24927,
+            0.19204
+          ],
+          "et": [
+            0.35227,
+            0.47901,
+            0.16872
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.7062
+        },
+        "dixoncoles": {
+          "p90": [
+            0.55648,
+            0.24302,
+            0.20049
+          ],
+          "et": [
+            0.35227,
+            0.47901,
+            0.16872
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.7003
+        },
+        "ensemble": {
+          "p90": [
+            0.55201,
+            0.24454,
+            0.20345
+          ],
+          "et": [
+            0.35227,
+            0.47901,
+            0.16872
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.69672
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.11577
+        ],
+        [
+          "1-0",
+          0.10651
+        ],
+        [
+          "2-0",
+          0.10002
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 86,
+      "round": "R32",
+      "date": "2026-07-03",
+      "venueCountry": "United States",
+      "homeSlot": "1J",
+      "awaySlot": "2H",
+      "homeTeam": "Argentina",
+      "awayTeam": "Cape Verde",
+      "status": "played",
+      "result": {
+        "homeScore": 3,
+        "awayScore": 2,
+        "winner": "Argentina",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.83266,
+            0.12771,
+            0.03962
+          ],
+          "et": [
+            0.64122,
+            0.30906,
+            0.04972
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.93429
+        },
+        "ordlogit": {
+          "p90": [
+            0.90022,
+            0.0675,
+            0.03228
+          ],
+          "et": [
+            0.64122,
+            0.30906,
+            0.04972
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.95394
+        },
+        "dixoncoles": {
+          "p90": [
+            0.91431,
+            0.06526,
+            0.02043
+          ],
+          "et": [
+            0.64122,
+            0.30906,
+            0.04972
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.96624
+        },
+        "ensemble": {
+          "p90": [
+            0.8824,
+            0.08682,
+            0.03078
+          ],
+          "et": [
+            0.64122,
+            0.30906,
+            0.04972
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.95149
+        }
+      },
+      "scorelines": [
+        [
+          "3-0",
+          0.13054
+        ],
+        [
+          "4-0",
+          0.1173
+        ],
+        [
+          "2-0",
+          0.10895
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 87,
+      "round": "R32",
+      "date": "2026-07-03",
+      "venueCountry": "United States",
+      "homeSlot": "1K",
+      "awaySlot": "3rd[D/E/I/J/L]",
+      "homeTeam": "Colombia",
+      "awayTeam": "Ghana",
+      "status": "played",
+      "result": {
+        "homeScore": 1,
+        "awayScore": 0,
+        "winner": "Colombia",
+        "pens": false
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.76106,
+            0.16584,
+            0.0731
+          ],
+          "et": [
+            0.54249,
+            0.37909,
+            0.07842
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.88246
+        },
+        "ordlogit": {
+          "p90": [
+            0.82547,
+            0.11471,
+            0.05981
+          ],
+          "et": [
+            0.54249,
+            0.37909,
+            0.07842
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.90945
+        },
+        "dixoncoles": {
+          "p90": [
+            0.82845,
+            0.12044,
+            0.05111
+          ],
+          "et": [
+            0.54249,
+            0.37909,
+            0.07842
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.91662
+        },
+        "ensemble": {
+          "p90": [
+            0.80499,
+            0.13366,
+            0.06134
+          ],
+          "et": [
+            0.54249,
+            0.37909,
+            0.07842
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.90284
+        }
+      },
+      "scorelines": [
+        [
+          "2-0",
+          0.12688
+        ],
+        [
+          "3-0",
+          0.12076
+        ],
+        [
+          "4-0",
+          0.0862
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 88,
+      "round": "R32",
+      "date": "2026-07-03",
+      "venueCountry": "United States",
+      "homeSlot": "2D",
+      "awaySlot": "2G",
+      "homeTeam": "Australia",
+      "awayTeam": "Egypt",
+      "status": "played",
+      "result": {
+        "homeScore": 1,
+        "awayScore": 1,
+        "winner": "Egypt",
+        "pens": true
+      },
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.40545,
+            0.25924,
+            0.3353
+          ],
+          "et": [
+            0.27048,
+            0.49748,
+            0.23205
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.54006
+        },
+        "ordlogit": {
+          "p90": [
+            0.39513,
+            0.2895,
+            0.31537
+          ],
+          "et": [
+            0.27048,
+            0.49748,
+            0.23205
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.54545
+        },
+        "dixoncoles": {
+          "p90": [
+            0.40217,
+            0.27223,
+            0.3256
+          ],
+          "et": [
+            0.27048,
+            0.49748,
+            0.23205
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.54352
+        },
+        "ensemble": {
+          "p90": [
+            0.40092,
+            0.27366,
+            0.32542
+          ],
+          "et": [
+            0.27048,
+            0.49748,
+            0.23205
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.54301
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.12969
+        ],
+        [
+          "1-0",
+          0.09292
+        ],
+        [
+          "2-1",
+          0.087
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 89,
+      "round": "R16",
+      "date": "2026-07-04",
+      "venueCountry": "United States",
+      "homeSlot": "W74",
+      "awaySlot": "W77",
+      "homeTeam": "Paraguay",
+      "awayTeam": "France",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.13067,
+            0.20686,
+            0.66247
+          ],
+          "et": [
+            0.11803,
+            0.43846,
+            0.44351
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.20043
+        },
+        "ordlogit": {
+          "p90": [
+            0.10976,
+            0.18089,
+            0.70935
+          ],
+          "et": [
+            0.11803,
+            0.43846,
+            0.44351
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.17077
+        },
+        "dixoncoles": {
+          "p90": [
+            0.10936,
+            0.18637,
+            0.70428
+          ],
+          "et": [
+            0.11803,
+            0.43846,
+            0.44351
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.17221
+        },
+        "ensemble": {
+          "p90": [
+            0.1166,
+            0.19137,
+            0.69203
+          ],
+          "et": [
+            0.11803,
+            0.43846,
+            0.44351
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.18114
+        }
+      },
+      "scorelines": [
+        [
+          "0-2",
+          0.12248
+        ],
+        [
+          "0-1",
+          0.10434
+        ],
+        [
+          "1-2",
+          0.09528
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 90,
+      "round": "R16",
+      "date": "2026-07-04",
+      "venueCountry": "United States",
+      "homeSlot": "W73",
+      "awaySlot": "W75",
+      "homeTeam": "Canada",
+      "awayTeam": "Morocco",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.22199,
+            0.24243,
+            0.53558
+          ],
+          "et": [
+            0.17101,
+            0.4802,
+            0.34878
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.32165
+        },
+        "ordlogit": {
+          "p90": [
+            0.19618,
+            0.25166,
+            0.55216
+          ],
+          "et": [
+            0.17101,
+            0.4802,
+            0.34878
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.29964
+        },
+        "dixoncoles": {
+          "p90": [
+            0.20489,
+            0.24484,
+            0.55027
+          ],
+          "et": [
+            0.17101,
+            0.4802,
+            0.34878
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.30555
+        },
+        "ensemble": {
+          "p90": [
+            0.20768,
+            0.24631,
+            0.546
+          ],
+          "et": [
+            0.17101,
+            0.4802,
+            0.34878
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.30895
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.11664
+        ],
+        [
+          "0-1",
+          0.10624
+        ],
+        [
+          "0-2",
+          0.09889
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 91,
+      "round": "R16",
+      "date": "2026-07-05",
+      "venueCountry": "United States",
+      "homeSlot": "W76",
+      "awaySlot": "W78",
+      "homeTeam": "Brazil",
+      "awayTeam": "Norway",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.50674,
+            0.24791,
+            0.24535
+          ],
+          "et": [
+            0.33026,
+            0.48599,
+            0.18375
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.64886
+        },
+        "ordlogit": {
+          "p90": [
+            0.51661,
+            0.26369,
+            0.2197
+          ],
+          "et": [
+            0.33026,
+            0.48599,
+            0.18375
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.66778
+        },
+        "dixoncoles": {
+          "p90": [
+            0.51664,
+            0.2538,
+            0.22956
+          ],
+          "et": [
+            0.33026,
+            0.48599,
+            0.18375
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.66213
+        },
+        "ensemble": {
+          "p90": [
+            0.51333,
+            0.25514,
+            0.23154
+          ],
+          "et": [
+            0.33026,
+            0.48599,
+            0.18375
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.65959
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.12091
+        ],
+        [
+          "1-0",
+          0.10437
+        ],
+        [
+          "2-1",
+          0.09667
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 92,
+      "round": "R16",
+      "date": "2026-07-05",
+      "venueCountry": "Mexico",
+      "homeSlot": "W79",
+      "awaySlot": "W80",
+      "homeTeam": "Mexico",
+      "awayTeam": "England",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.38708,
+            0.25991,
+            0.35302
+          ],
+          "et": [
+            0.26025,
+            0.49813,
+            0.24162
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.51945
+        },
+        "ordlogit": {
+          "p90": [
+            0.37384,
+            0.29105,
+            0.33511
+          ],
+          "et": [
+            0.26025,
+            0.49813,
+            0.24162
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.52208
+        },
+        "dixoncoles": {
+          "p90": [
+            0.38193,
+            0.27331,
+            0.34476
+          ],
+          "et": [
+            0.26025,
+            0.49813,
+            0.24162
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.52113
+        },
+        "ensemble": {
+          "p90": [
+            0.38095,
+            0.27475,
+            0.3443
+          ],
+          "et": [
+            0.26025,
+            0.49813,
+            0.24162
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.52089
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.1302
+        ],
+        [
+          "1-0",
+          0.09014
+        ],
+        [
+          "2-1",
+          0.08458
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 93,
+      "round": "R16",
+      "date": "2026-07-06",
+      "venueCountry": "United States",
+      "homeSlot": "W83",
+      "awaySlot": "W84",
+      "homeTeam": "Portugal",
+      "awayTeam": "Spain",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.22451,
+            0.24309,
+            0.5324
+          ],
+          "et": [
+            0.1724,
+            0.4809,
+            0.3467
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.32487
+        },
+        "ordlogit": {
+          "p90": [
+            0.1987,
+            0.25308,
+            0.54823
+          ],
+          "et": [
+            0.1724,
+            0.4809,
+            0.3467
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.30318
+        },
+        "dixoncoles": {
+          "p90": [
+            0.20755,
+            0.24591,
+            0.54654
+          ],
+          "et": [
+            0.1724,
+            0.4809,
+            0.3467
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.30908
+        },
+        "ensemble": {
+          "p90": [
+            0.21025,
+            0.24736,
+            0.54239
+          ],
+          "et": [
+            0.1724,
+            0.4809,
+            0.3467
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.31237
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.11715
+        ],
+        [
+          "0-1",
+          0.10607
+        ],
+        [
+          "0-2",
+          0.0982
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 94,
+      "round": "R16",
+      "date": "2026-07-06",
+      "venueCountry": "United States",
+      "homeSlot": "W81",
+      "awaySlot": "W82",
+      "homeTeam": "United States",
+      "awayTeam": "Belgium",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.3604,
+            0.26005,
+            0.37956
+          ],
+          "et": [
+            0.24563,
+            0.49827,
+            0.25611
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.48906
+        },
+        "ordlogit": {
+          "p90": [
+            0.34341,
+            0.29138,
+            0.36521
+          ],
+          "et": [
+            0.24563,
+            0.49827,
+            0.25611
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.48758
+        },
+        "dixoncoles": {
+          "p90": [
+            0.35278,
+            0.27353,
+            0.37369
+          ],
+          "et": [
+            0.24563,
+            0.49827,
+            0.25611
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.48811
+        },
+        "ensemble": {
+          "p90": [
+            0.3522,
+            0.27499,
+            0.37282
+          ],
+          "et": [
+            0.24563,
+            0.49827,
+            0.25611
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.48825
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.13031
+        ],
+        [
+          "0-1",
+          0.08895
+        ],
+        [
+          "1-0",
+          0.08577
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 95,
+      "round": "R16",
+      "date": "2026-07-07",
+      "venueCountry": "United States",
+      "homeSlot": "W86",
+      "awaySlot": "W88",
+      "homeTeam": "Argentina",
+      "awayTeam": "Egypt",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.72708,
+            0.18139,
+            0.09153
+          ],
+          "et": [
+            0.50472,
+            0.40325,
+            0.09203
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.8552
+        },
+        "ordlogit": {
+          "p90": [
+            0.78669,
+            0.13787,
+            0.07544
+          ],
+          "et": [
+            0.50472,
+            0.40325,
+            0.09203
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.88408
+        },
+        "dixoncoles": {
+          "p90": [
+            0.78566,
+            0.14497,
+            0.06937
+          ],
+          "et": [
+            0.50472,
+            0.40325,
+            0.09203
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.88806
+        },
+        "ensemble": {
+          "p90": [
+            0.76648,
+            0.15474,
+            0.07878
+          ],
+          "et": [
+            0.50472,
+            0.40325,
+            0.09203
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.87578
+        }
+      },
+      "scorelines": [
+        [
+          "2-0",
+          0.1279
+        ],
+        [
+          "3-0",
+          0.11139
+        ],
+        [
+          "1-0",
+          0.09457
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 96,
+      "round": "R16",
+      "date": "2026-07-07",
+      "venueCountry": "Canada",
+      "homeSlot": "W85",
+      "awaySlot": "W87",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Colombia",
+      "status": "scheduled",
+      "result": null,
+      "probs": {
+        "davidson": {
+          "p90": [
+            0.29795,
+            0.25625,
+            0.4458
+          ],
+          "et": [
+            0.212,
+            0.4945,
+            0.2935
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.41563
+        },
+        "ordlogit": {
+          "p90": [
+            0.27468,
+            0.28255,
+            0.44277
+          ],
+          "et": [
+            0.212,
+            0.4945,
+            0.2935
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.40444
+        },
+        "dixoncoles": {
+          "p90": [
+            0.28548,
+            0.26738,
+            0.44714
+          ],
+          "et": [
+            0.212,
+            0.4945,
+            0.2935
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.40828
+        },
+        "ensemble": {
+          "p90": [
+            0.28604,
+            0.26873,
+            0.44524
+          ],
+          "et": [
+            0.212,
+            0.4945,
+            0.2935
+          ],
+          "pensWin": 0.5,
+          "advHome": 0.40945
+        }
+      },
+      "scorelines": [
+        [
+          "1-1",
+          0.12737
+        ],
+        [
+          "0-1",
+          0.09831
+        ],
+        [
+          "1-2",
+          0.09162
+        ]
+      ],
+      "candidates": null
+    },
+    {
+      "match": 97,
+      "round": "QF",
+      "date": "2026-07-09",
+      "venueCountry": "United States",
+      "homeSlot": "W89",
+      "awaySlot": "W90",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "France",
+            "p": 0.81886
+          },
+          {
+            "team": "Paraguay",
+            "p": 0.18114
+          }
+        ],
+        "away": [
+          {
+            "team": "Morocco",
+            "p": 0.69105
+          },
+          {
+            "team": "Canada",
+            "p": 0.30895
+          }
+        ]
+      }
+    },
+    {
+      "match": 98,
+      "round": "QF",
+      "date": "2026-07-10",
+      "venueCountry": "United States",
+      "homeSlot": "W93",
+      "awaySlot": "W94",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "Spain",
+            "p": 0.68763
+          },
+          {
+            "team": "Portugal",
+            "p": 0.31237
+          }
+        ],
+        "away": [
+          {
+            "team": "Belgium",
+            "p": 0.51175
+          },
+          {
+            "team": "United States",
+            "p": 0.48825
+          }
+        ]
+      }
+    },
+    {
+      "match": 99,
+      "round": "QF",
+      "date": "2026-07-11",
+      "venueCountry": "United States",
+      "homeSlot": "W91",
+      "awaySlot": "W92",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "Brazil",
+            "p": 0.65959
+          },
+          {
+            "team": "Norway",
+            "p": 0.34041
+          }
+        ],
+        "away": [
+          {
+            "team": "Mexico",
+            "p": 0.52089
+          },
+          {
+            "team": "England",
+            "p": 0.47911
+          }
+        ]
+      }
+    },
+    {
+      "match": 100,
+      "round": "QF",
+      "date": "2026-07-11",
+      "venueCountry": "United States",
+      "homeSlot": "W95",
+      "awaySlot": "W96",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "Argentina",
+            "p": 0.87578
+          },
+          {
+            "team": "Egypt",
+            "p": 0.12422
+          }
+        ],
+        "away": [
+          {
+            "team": "Colombia",
+            "p": 0.59055
+          },
+          {
+            "team": "Switzerland",
+            "p": 0.40945
+          }
+        ]
+      }
+    },
+    {
+      "match": 101,
+      "round": "SF",
+      "date": "2026-07-14",
+      "venueCountry": "United States",
+      "homeSlot": "W97",
+      "awaySlot": "W98",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "France",
+            "p": 0.61218
+          },
+          {
+            "team": "Morocco",
+            "p": 0.24917
+          },
+          {
+            "team": "Paraguay",
+            "p": 0.07434
+          },
+          {
+            "team": "Canada",
+            "p": 0.06431
+          }
+        ],
+        "away": [
+          {
+            "team": "Spain",
+            "p": 0.52523
+          },
+          {
+            "team": "Portugal",
+            "p": 0.18502
+          },
+          {
+            "team": "Belgium",
+            "p": 0.15069
+          },
+          {
+            "team": "United States",
+            "p": 0.13906
+          }
+        ]
+      }
+    },
+    {
+      "match": 102,
+      "round": "SF",
+      "date": "2026-07-15",
+      "venueCountry": "United States",
+      "homeSlot": "W99",
+      "awaySlot": "W100",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "Brazil",
+            "p": 0.36603
+          },
+          {
+            "team": "England",
+            "p": 0.26316
+          },
+          {
+            "team": "Mexico",
+            "p": 0.23692
+          },
+          {
+            "team": "Norway",
+            "p": 0.13389
+          }
+        ],
+        "away": [
+          {
+            "team": "Argentina",
+            "p": 0.61756
+          },
+          {
+            "team": "Colombia",
+            "p": 0.22482
+          },
+          {
+            "team": "Switzerland",
+            "p": 0.12458
+          },
+          {
+            "team": "Egypt",
+            "p": 0.03305
+          }
+        ]
+      }
+    },
+    {
+      "match": 103,
+      "round": "3rd",
+      "date": "2026-07-18",
+      "venueCountry": "United States",
+      "homeSlot": "L101",
+      "awaySlot": "L102",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "France",
+            "p": 0.25561
+          },
+          {
+            "team": "Spain",
+            "p": 0.19702
+          },
+          {
+            "team": "Morocco",
+            "p": 0.15378
+          },
+          {
+            "team": "Portugal",
+            "p": 0.10286
+          },
+          {
+            "team": "Belgium",
+            "p": 0.09563
+          },
+          {
+            "team": "United States",
+            "p": 0.08967
+          },
+          {
+            "team": "Paraguay",
+            "p": 0.05539
+          },
+          {
+            "team": "Canada",
+            "p": 0.05003
+          }
+        ],
+        "away": [
+          {
+            "team": "Brazil",
+            "p": 0.20248
+          },
+          {
+            "team": "Argentina",
+            "p": 0.19688
+          },
+          {
+            "team": "Mexico",
+            "p": 0.15309
+          },
+          {
+            "team": "England",
+            "p": 0.14686
+          },
+          {
+            "team": "Colombia",
+            "p": 0.11002
+          },
+          {
+            "team": "Norway",
+            "p": 0.09362
+          },
+          {
+            "team": "Switzerland",
+            "p": 0.07213
+          },
+          {
+            "team": "Egypt",
+            "p": 0.0249
+          }
+        ]
+      }
+    },
+    {
+      "match": 104,
+      "round": "Final",
+      "date": "2026-07-19",
+      "venueCountry": "United States",
+      "homeSlot": "W101",
+      "awaySlot": "W102",
+      "homeTeam": null,
+      "awayTeam": null,
+      "status": "scheduled",
+      "result": null,
+      "probs": null,
+      "scorelines": null,
+      "candidates": {
+        "home": [
+          {
+            "team": "France",
+            "p": 0.35657
+          },
+          {
+            "team": "Spain",
+            "p": 0.3282
+          },
+          {
+            "team": "Morocco",
+            "p": 0.09539
+          },
+          {
+            "team": "Portugal",
+            "p": 0.08216
+          },
+          {
+            "team": "Belgium",
+            "p": 0.05506
+          },
+          {
+            "team": "United States",
+            "p": 0.04939
+          },
+          {
+            "team": "Paraguay",
+            "p": 0.01895
+          },
+          {
+            "team": "Canada",
+            "p": 0.01428
+          }
+        ],
+        "away": [
+          {
+            "team": "Argentina",
+            "p": 0.42068
+          },
+          {
+            "team": "Brazil",
+            "p": 0.16355
+          },
+          {
+            "team": "England",
+            "p": 0.11629
+          },
+          {
+            "team": "Colombia",
+            "p": 0.11479
+          },
+          {
+            "team": "Mexico",
+            "p": 0.08383
+          },
+          {
+            "team": "Switzerland",
+            "p": 0.05244
+          },
+          {
+            "team": "Norway",
+            "p": 0.04027
+          },
+          {
+            "team": "Egypt",
+            "p": 0.00815
+          }
+        ]
+      }
+    }
+  ],
+  "reach": {
+    "davidson": {
+      "Algeria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Argentina": {
+        "r16": 1.0,
+        "qf": 0.8552,
+        "sf": 0.5919,
+        "final": 0.39672,
+        "champion": 0.23935
+      },
+      "Australia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Austria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Belgium": {
+        "r16": 1.0,
+        "qf": 0.51094,
+        "sf": 0.15828,
+        "final": 0.06046,
+        "champion": 0.02068
+      },
+      "Bosnia and Herzegovina": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Brazil": {
+        "r16": 1.0,
+        "qf": 0.64886,
+        "sf": 0.35756,
+        "final": 0.16355,
+        "champion": 0.07805
+      },
+      "Canada": {
+        "r16": 1.0,
+        "qf": 0.32165,
+        "sf": 0.0742,
+        "final": 0.01798,
+        "champion": 0.00402
+      },
+      "Cape Verde": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Colombia": {
+        "r16": 1.0,
+        "qf": 0.58437,
+        "sf": 0.23212,
+        "final": 0.11863,
+        "champion": 0.05279
+      },
+      "Croatia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "DR Congo": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ecuador": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Egypt": {
+        "r16": 1.0,
+        "qf": 0.1448,
+        "sf": 0.04078,
+        "final": 0.01075,
+        "champion": 0.00238
+      },
+      "England": {
+        "r16": 1.0,
+        "qf": 0.48055,
+        "sf": 0.26312,
+        "final": 0.11915,
+        "champion": 0.05631
+      },
+      "France": {
+        "r16": 1.0,
+        "qf": 0.79957,
+        "sf": 0.58673,
+        "final": 0.34147,
+        "champion": 0.19211
+      },
+      "Germany": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ghana": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ivory Coast": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Japan": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Mexico": {
+        "r16": 1.0,
+        "qf": 0.51945,
+        "sf": 0.23871,
+        "final": 0.08839,
+        "champion": 0.03437
+      },
+      "Morocco": {
+        "r16": 1.0,
+        "qf": 0.67835,
+        "sf": 0.25514,
+        "final": 0.10086,
+        "champion": 0.03767
+      },
+      "Netherlands": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Norway": {
+        "r16": 1.0,
+        "qf": 0.35114,
+        "sf": 0.1406,
+        "final": 0.045,
+        "champion": 0.01519
+      },
+      "Paraguay": {
+        "r16": 1.0,
+        "qf": 0.20043,
+        "sf": 0.08393,
+        "final": 0.023,
+        "champion": 0.00584
+      },
+      "Portugal": {
+        "r16": 1.0,
+        "qf": 0.32487,
+        "sf": 0.19038,
+        "final": 0.08678,
+        "champion": 0.03611
+      },
+      "Senegal": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "South Africa": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Spain": {
+        "r16": 1.0,
+        "qf": 0.67513,
+        "sf": 0.50431,
+        "final": 0.3147,
+        "champion": 0.18571
+      },
+      "Sweden": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Switzerland": {
+        "r16": 1.0,
+        "qf": 0.41563,
+        "sf": 0.1352,
+        "final": 0.0578,
+        "champion": 0.02122
+      },
+      "United States": {
+        "r16": 1.0,
+        "qf": 0.48906,
+        "sf": 0.14703,
+        "final": 0.05475,
+        "champion": 0.01821
+      }
+    },
+    "ordlogit": {
+      "Algeria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Argentina": {
+        "r16": 1.0,
+        "qf": 0.88408,
+        "sf": 0.63145,
+        "final": 0.43503,
+        "champion": 0.26248
+      },
+      "Australia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Austria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Belgium": {
+        "r16": 1.0,
+        "qf": 0.51242,
+        "sf": 0.14551,
+        "final": 0.05158,
+        "champion": 0.01621
+      },
+      "Bosnia and Herzegovina": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Brazil": {
+        "r16": 1.0,
+        "qf": 0.66778,
+        "sf": 0.37267,
+        "final": 0.16391,
+        "champion": 0.07551
+      },
+      "Canada": {
+        "r16": 1.0,
+        "qf": 0.29964,
+        "sf": 0.05892,
+        "final": 0.0124,
+        "champion": 0.00235
+      },
+      "Cape Verde": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Colombia": {
+        "r16": 1.0,
+        "qf": 0.59556,
+        "sf": 0.22071,
+        "final": 0.11259,
+        "champion": 0.04781
+      },
+      "Croatia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "DR Congo": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ecuador": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Egypt": {
+        "r16": 1.0,
+        "qf": 0.11592,
+        "sf": 0.02962,
+        "final": 0.00698,
+        "champion": 0.00129
+      },
+      "England": {
+        "r16": 1.0,
+        "qf": 0.47792,
+        "sf": 0.26305,
+        "final": 0.11435,
+        "champion": 0.05208
+      },
+      "France": {
+        "r16": 1.0,
+        "qf": 0.82923,
+        "sf": 0.62683,
+        "final": 0.365,
+        "champion": 0.20448
+      },
+      "Germany": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ghana": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ivory Coast": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Japan": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Mexico": {
+        "r16": 1.0,
+        "qf": 0.52208,
+        "sf": 0.23545,
+        "final": 0.08081,
+        "champion": 0.02927
+      },
+      "Morocco": {
+        "r16": 1.0,
+        "qf": 0.70036,
+        "sf": 0.24527,
+        "final": 0.09169,
+        "champion": 0.03195
+      },
+      "Netherlands": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Norway": {
+        "r16": 1.0,
+        "qf": 0.33222,
+        "sf": 0.12883,
+        "final": 0.03721,
+        "champion": 0.01139
+      },
+      "Paraguay": {
+        "r16": 1.0,
+        "qf": 0.17077,
+        "sf": 0.06898,
+        "final": 0.01677,
+        "champion": 0.0037
+      },
+      "Portugal": {
+        "r16": 1.0,
+        "qf": 0.30318,
+        "sf": 0.18112,
+        "final": 0.07898,
+        "champion": 0.03124
+      },
+      "Senegal": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "South Africa": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Spain": {
+        "r16": 1.0,
+        "qf": 0.69682,
+        "sf": 0.53972,
+        "final": 0.33761,
+        "champion": 0.19962
+      },
+      "Sweden": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Switzerland": {
+        "r16": 1.0,
+        "qf": 0.40444,
+        "sf": 0.11822,
+        "final": 0.04914,
+        "champion": 0.01663
+      },
+      "United States": {
+        "r16": 1.0,
+        "qf": 0.48758,
+        "sf": 0.13365,
+        "final": 0.04598,
+        "champion": 0.01397
+      }
+    },
+    "dixoncoles": {
+      "Algeria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Argentina": {
+        "r16": 1.0,
+        "qf": 0.88806,
+        "sf": 0.62967,
+        "final": 0.43089,
+        "champion": 0.25976
+      },
+      "Australia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Austria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Belgium": {
+        "r16": 1.0,
+        "qf": 0.51189,
+        "sf": 0.14817,
+        "final": 0.05317,
+        "champion": 0.01698
+      },
+      "Bosnia and Herzegovina": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Brazil": {
+        "r16": 1.0,
+        "qf": 0.66213,
+        "sf": 0.36794,
+        "final": 0.16282,
+        "champion": 0.07561
+      },
+      "Canada": {
+        "r16": 1.0,
+        "qf": 0.30555,
+        "sf": 0.06009,
+        "final": 0.0128,
+        "champion": 0.00245
+      },
+      "Cape Verde": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Colombia": {
+        "r16": 1.0,
+        "qf": 0.59172,
+        "sf": 0.22096,
+        "final": 0.1128,
+        "champion": 0.04841
+      },
+      "Croatia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "DR Congo": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ecuador": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Egypt": {
+        "r16": 1.0,
+        "qf": 0.11194,
+        "sf": 0.02921,
+        "final": 0.00702,
+        "champion": 0.00131
+      },
+      "England": {
+        "r16": 1.0,
+        "qf": 0.47887,
+        "sf": 0.2632,
+        "final": 0.11515,
+        "champion": 0.05289
+      },
+      "France": {
+        "r16": 1.0,
+        "qf": 0.82779,
+        "sf": 0.62329,
+        "final": 0.36305,
+        "champion": 0.20319
+      },
+      "Germany": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ghana": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ivory Coast": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Japan": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Mexico": {
+        "r16": 1.0,
+        "qf": 0.52113,
+        "sf": 0.23649,
+        "final": 0.08216,
+        "champion": 0.03023
+      },
+      "Morocco": {
+        "r16": 1.0,
+        "qf": 0.69445,
+        "sf": 0.2463,
+        "final": 0.09326,
+        "champion": 0.03297
+      },
+      "Netherlands": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Norway": {
+        "r16": 1.0,
+        "qf": 0.33787,
+        "sf": 0.13237,
+        "final": 0.03876,
+        "champion": 0.01209
+      },
+      "Paraguay": {
+        "r16": 1.0,
+        "qf": 0.17221,
+        "sf": 0.07032,
+        "final": 0.01737,
+        "champion": 0.00389
+      },
+      "Portugal": {
+        "r16": 1.0,
+        "qf": 0.30908,
+        "sf": 0.18344,
+        "final": 0.08062,
+        "champion": 0.03223
+      },
+      "Senegal": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "South Africa": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Spain": {
+        "r16": 1.0,
+        "qf": 0.69092,
+        "sf": 0.53198,
+        "final": 0.3322,
+        "champion": 0.19595
+      },
+      "Sweden": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Switzerland": {
+        "r16": 1.0,
+        "qf": 0.40828,
+        "sf": 0.12016,
+        "final": 0.05041,
+        "champion": 0.01735
+      },
+      "United States": {
+        "r16": 1.0,
+        "qf": 0.48811,
+        "sf": 0.13642,
+        "final": 0.04752,
+        "champion": 0.01469
+      }
+    },
+    "ensemble": {
+      "Algeria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Argentina": {
+        "r16": 1.0,
+        "qf": 0.87578,
+        "sf": 0.61756,
+        "final": 0.42068,
+        "champion": 0.25381
+      },
+      "Australia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Austria": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Belgium": {
+        "r16": 1.0,
+        "qf": 0.51175,
+        "sf": 0.15069,
+        "final": 0.05506,
+        "champion": 0.01792
+      },
+      "Bosnia and Herzegovina": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Brazil": {
+        "r16": 1.0,
+        "qf": 0.65959,
+        "sf": 0.36603,
+        "final": 0.16355,
+        "champion": 0.07648
+      },
+      "Canada": {
+        "r16": 1.0,
+        "qf": 0.30895,
+        "sf": 0.06431,
+        "final": 0.01428,
+        "champion": 0.00288
+      },
+      "Cape Verde": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Colombia": {
+        "r16": 1.0,
+        "qf": 0.59055,
+        "sf": 0.22482,
+        "final": 0.11479,
+        "champion": 0.04972
+      },
+      "Croatia": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "DR Congo": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ecuador": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Egypt": {
+        "r16": 1.0,
+        "qf": 0.12422,
+        "sf": 0.03305,
+        "final": 0.00815,
+        "champion": 0.00161
+      },
+      "England": {
+        "r16": 1.0,
+        "qf": 0.47911,
+        "sf": 0.26316,
+        "final": 0.11629,
+        "champion": 0.05381
+      },
+      "France": {
+        "r16": 1.0,
+        "qf": 0.81886,
+        "sf": 0.61218,
+        "final": 0.35657,
+        "champion": 0.20005
+      },
+      "Germany": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ghana": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Ivory Coast": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Japan": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Mexico": {
+        "r16": 1.0,
+        "qf": 0.52089,
+        "sf": 0.23692,
+        "final": 0.08383,
+        "champion": 0.03129
+      },
+      "Morocco": {
+        "r16": 1.0,
+        "qf": 0.69105,
+        "sf": 0.24917,
+        "final": 0.09539,
+        "champion": 0.03421
+      },
+      "Netherlands": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Norway": {
+        "r16": 1.0,
+        "qf": 0.34041,
+        "sf": 0.13389,
+        "final": 0.04027,
+        "champion": 0.01283
+      },
+      "Paraguay": {
+        "r16": 1.0,
+        "qf": 0.18114,
+        "sf": 0.07434,
+        "final": 0.01895,
+        "champion": 0.00442
+      },
+      "Portugal": {
+        "r16": 1.0,
+        "qf": 0.31237,
+        "sf": 0.18502,
+        "final": 0.08216,
+        "champion": 0.03319
+      },
+      "Senegal": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "South Africa": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Spain": {
+        "r16": 1.0,
+        "qf": 0.68763,
+        "sf": 0.52523,
+        "final": 0.3282,
+        "champion": 0.19384
+      },
+      "Sweden": {
+        "r16": 0.0,
+        "qf": 0.0,
+        "sf": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      },
+      "Switzerland": {
+        "r16": 1.0,
+        "qf": 0.40945,
+        "sf": 0.12458,
+        "final": 0.05244,
+        "champion": 0.01836
+      },
+      "United States": {
+        "r16": 1.0,
+        "qf": 0.48825,
+        "sf": 0.13906,
+        "final": 0.04939,
+        "champion": 0.01558
+      }
+    }
+  }
+}
